@@ -6,9 +6,13 @@
 // Fatorial(5) = 5*4*3*2*1 = 120
 
 function factorial(n) {
-  let facto = 1;
-
-
+  let factoNum = 1;
+  for (let i = 2; i <= n; i++) {
+    factoNum = factoNum * i;
+  }
+  return factoNum;
 }
 
-console.log(factorial(2));
+console.log(factorial(0)); // 1
+console.log(factorial(1)); // 1
+console.log(factorial(5)); // 120
